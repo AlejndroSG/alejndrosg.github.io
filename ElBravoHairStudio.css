@@ -821,7 +821,7 @@ input[type="checkbox"]{
 #instagram > div a{
   position: fixed;
   right: 6px;
-  bottom: 120px;
+  bottom: 90px;
   width: 96px;
 }
 #instagram > div > a img{
@@ -848,7 +848,7 @@ input[type="checkbox"]{
 #boosky > div a{
   position: fixed;
   right: 20px;
-  bottom: 40px;
+  bottom: 10px;
   width: 70px;
 }
 #boosky > div > a img{
