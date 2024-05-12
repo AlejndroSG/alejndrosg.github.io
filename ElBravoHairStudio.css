@@ -807,6 +807,9 @@ input[type="checkbox"]{
   #opiniones > div{
     width: 80%;
   }
+  footer > div:nth-child(2) div{
+    width: 33%;
+  }
 }
 
 #instagram{
@@ -855,6 +858,38 @@ input[type="checkbox"]{
   filter: drop-shadow(2px 2px 2px #02CFA7);
 }
 
+/* --------------------------- */
+
+footer{
+  background-color: #000;
+  height: auto;
+}
+footer > div:nth-child(1){
+  color: white;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  align-items: center;
+  padding: 30px 0;
+}
+footer > div:nth-child(2){
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+  color: white;
+}
+footer > div:nth-child(2) div{
+  width: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+footer > div:nth-child(2) div img{
+  max-width: 100%;
+}
 
 @media (max-width: 525px){
 
