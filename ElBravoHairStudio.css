@@ -651,6 +651,24 @@ input[type="checkbox"]{
   margin-top: 20px;
 }
 
+.marqueesa{
+  width: 100%;
+  overflow: hidden;
+}
+
+.marquee__content{
+  display: flex;
+  list-style: none;
+  animation: scrolling 30s linear infinite;
+}
+.marquee__item{
+  flex-shrink: 0;
+}
+@keyframes scrolling{
+  0% { transform: translateX(0)}
+  100% { transform: translateX(-100%) }
+}
+
 .btn-23,
 .btn-23 *,
 .btn-23 :after,
