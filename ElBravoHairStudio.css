@@ -661,12 +661,21 @@ input[type="checkbox"]{
   list-style: none;
   animation: scrolling 30s linear infinite;
 }
+.marquee__contentt{
+  display: flex;
+  list-style: none;
+  animation: scrollingg 30s linear infinite;
+}
 .marquee__item{
   flex-shrink: 0;
 }
 @keyframes scrolling{
   0% { transform: translateX(0)}
   100% { transform: translateX(-100%) }
+}
+@keyframes scrollingg{
+  0% { transform: translateX(-100%)}
+  100% { transform: translateX(0) }
 }
 
 .btn-23,
