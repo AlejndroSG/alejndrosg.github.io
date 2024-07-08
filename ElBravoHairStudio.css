@@ -1,11 +1,9 @@
 *{
     margin: 0;
-}
+  }
 
 body {
     margin: 0;
-    font-family: "Work Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-    font-weight: 400;
     background-color: #f4f4f4;
   }
   
@@ -18,173 +16,57 @@ body {
   }
   /* header */
   
-  .header {
+  #contenido {
     /* box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1); */
     position: fixed;
-    width: 100%; 
-    z-index: 3;
-    padding: 35px 0px 20px 0px;
-    background-color: #00000076;
-  }
-  
-  .header nav {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    overflow: hidden;
-    width: 95%;
-    margin: auto;
-    color: white;
-  }
-  
-  .header nav a {
-    display: block;
-    padding: 20px 0px 20px 10px;
-    text-decoration: none;
-    color: white;
-
-  }
-  .header .especial{
-    background-color: #02CFA7;
-    color: black;
-    border-radius: 25% 10%;
-  }
-  .header .especial:hover{
-    background-color: #02e9bab8;
-    color: white;
-    border-radius: 25% 10%;
-  }
-  
-  .header a:hover,
-  .header .menu-btn:hover {
-    background-color: #6365647e;
-    border-radius: 10px;
-    color: white;
-  }
-  
-  .header .logo {
-    display: block;
-    float: left;
-    padding: 10px 0px 10px 20px;
-    text-decoration: none;
-  }
-  .header .logo img{
-    width: 80%;
-
-  }
-  
-  /* menu */
-  
-  .header .menu {
-    clear: both;
-    max-height: 0;
-    transition: max-height .2s ease-out;
-    display: none;
-    padding: 0px;
-  }
-  
-  .menu ul{
-    padding-inline-start: 12px;
-    width: 150px;
-  }
-  
-  /* menu icon */
-  
-  .header .menu-icon {
-    cursor: pointer;
-    display: inline-block;
-    float: right;
-    padding: 28px 20px;
-    position: relative;
-    user-select: none;
-  }
-  
-  .header .menu-icon .navicon {
-    background: #ffffff;
-    display: block;
-    height: 2px;
-    position: relative;
-    transition: background .2s ease-out;
-    width: 18px;
-  }
-  
-  .header .menu-icon .navicon:before,
-  .header .menu-icon .navicon:after {
-    background: white;
-    content: '';
-    display: block;
-    height: 100%;
-    position: absolute;
-    transition: all .2s ease-out;
+    background-color: rgba(0, 0, 0, 0.371);
     width: 100%;
+    z-index: 1000;
+    display: block;
+    color: white;
   }
-  
-  .header .menu-icon .navicon:before {
-    top: 5px;
-  }
-  
-  .header .menu-icon .navicon:after {
-    top: -5px;
-  }
-  
-  /* menu btn */
-  
-  .header .menu-btn {
-    display: none;
-  }
-  
-  .header .menu-btn:checked ~ .menu {
-    max-height: 240px;
-    margin-bottom: 65px;
-  }
-  
-  .header .menu-btn:checked ~ .menu-icon .navicon {
-    background: transparent;
-  }
-  
-  .header .menu-btn:checked ~ .menu-icon .navicon:before {
-    transform: rotate(-45deg);
-  }
-  
-  .header .menu-btn:checked ~ .menu-icon .navicon:after {
-    transform: rotate(45deg);
-  }
-  .header .menu-btn:checked ~ .menu{
-    display: flex;  
-    flex-direction: column;
-    padding: 0px;
-    }
-  .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
-  .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
-    top: 0;
-  }
+#contenido a{
+  color: white;
+  font-size: 14px;
+  margin-block-start: 1rem;
+}
+#contenido p{
+    margin: 0;
+}
+#contenido a:hover{
+    color: rgb(255, 255, 255);
+}
+#contenido img{
+    width: 150px;
+}
+
+#navbar{
+    width: 95%;
+}
+.dropdown-menu{
+  color: #000;
+}
+.text-custom{
+  color: #02CFA7;
+}
   
   @media (min-width: 929px) {
-    .header ul {
-      float: left;
-    }
-    .menu ul{
-      width: 200px;
-    }
-    .header ul a {
-      padding: 20px 5px;
-      text-align: center;
-    }
-    .header .menu {
-      clear: none;
-      float: right;
-      max-height: none;
-      display: flex;
-      width: 61%;
-      justify-content: space-between;
-      align-items: center;
-    }
-    .header .menu-icon {
-      display: none;
-    }
-
     #presentacion > div{
       display: block;
+    }
+  }
+  @media (max-width: 992px){
+    #pelucas{
+      display: none;
+    }
+  }
+  @media (min-width: 992px){
+    .navbar-expand-lg .navbar-nav .dropdown-menu{
+      background-color: rgba(0, 0, 0, 0.371);
+      margin-top: 5%;
+    }
+    .navbar-expand-lg .navbar-nav .dropdown-menu a:hover{
+      background-color: #000000;
     }
   }
 
