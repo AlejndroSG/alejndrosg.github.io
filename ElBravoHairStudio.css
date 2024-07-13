@@ -76,6 +76,7 @@ body {
 #banner{
   background: url(./fotos/fondofinalB&N2.png);
   height: 100vh;
+  padding-bottom: 5%;
   background-size: cover;
   background-position: 0 70%;
   display: flex;
@@ -88,7 +89,7 @@ body {
   justify-content: center;
   align-items: center;
   margin: auto;
-  width: 80%;
+  width: auto;
 }
 #banner > div > div:nth-child(1){
   margin-bottom: 20%;
@@ -99,7 +100,7 @@ body {
   width: 90%;
 }
 #banner > div > div:nth-child(1) img{
-  width: 420px;
+  width: 380px;
   margin-bottom: 20px;
   padding-top: 20px;
 }
@@ -769,7 +770,7 @@ input[type="checkbox"]{
   position: fixed;
   right: 6px;
   bottom: 90px;
-  width: 96px;
+  width: 78px;
 }
 #instagram > div > a img{
   max-width: 100%;
@@ -795,8 +796,8 @@ input[type="checkbox"]{
 #boosky > div a{
   position: fixed;
   right: 20px;
-  bottom: 10px;
-  width: 70px;
+  bottom: 29px;
+  width: 53px;
 }
 #boosky > div > a img{
   max-width: 100%;
